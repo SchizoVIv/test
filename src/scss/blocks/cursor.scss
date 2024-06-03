@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .cursor {
   position: fixed;
   left: -50px;
@@ -7,7 +14,11 @@
   border: 1px solid var(--font-color);
   border-radius: 50%;
   pointer-events: none;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .1s;
+  -o-transition: .1s;
   transition: .1s;
 }
 
@@ -21,14 +32,16 @@
   background-color: var(--font-color);
   border-radius: 50%;
   pointer-events: none;
-  transform: translate(-50%, -50%);
-  // transition: .15s;
-  // transition: .15s;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 99;
 }
 
 .type1:hover + .cursor {
-  transform: translate(-50%, -50%) scale(1.5);
+  -webkit-transform: translate(-50%, -50%) scale(1.5);
+      -ms-transform: translate(-50%, -50%) scale(1.5);
+          transform: translate(-50%, -50%) scale(1.5);
   background-color: var(--font-color-light);
   opacity: .5;
 }
