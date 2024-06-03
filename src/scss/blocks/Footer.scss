@@ -1,0 +1,230 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+.footer {
+  background-color: var(--bg-acent-colog);
+}
+
+.footer__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 100px;
+  max-width: 1600px;
+}
+
+.footer__logo {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.footer__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__link, .footer__text {
+  color: var(--font-color-light);
+}
+
+.footer__text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.icon {
+  -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+      transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer__list-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin: 0 0 30px 0;
+}
+
+.footer__link-contact {
+  color: var(--font-color-light);
+}
+
+.footer__item-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.footer__text-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.footer__button-box {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
+  width: 140px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  // cursor: pointer;
+  background-color: var(--font-color-light);
+  -webkit-box-shadow: 0px 0px 0px 4px var(--bg-acent-colog);
+          box-shadow: 0px 0px 0px 4px var(--bg-acent-colog);
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.svgIcon {
+  width: 12px;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: var(--font-color);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  font-size: 0px;
+  content: "Вверх";
+  color: var(--font-color);
+}
+
+@media (min-width:993px) {
+  .icon:hover {
+    -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+        transform: scale(1.2);
+  }
+
+  .button:hover {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 140px;
+    border-radius: 50px;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    background-color: white;
+  }
+
+  .button:hover .svgIcon {
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transform: translateY(-200%);
+            -ms-transform: translateY(-200%);
+        transform: translateY(-200%);
+  }
+
+  .button:hover::before {
+    bottom: unset;
+    font-size: 13px;
+    opacity: 1;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+}
+
+@media (max-width: 1030px) {
+  .footer__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .footer__button-box {
+    position: static;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+  }
+}

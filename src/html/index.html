@@ -3,17 +3,20 @@
   <head>
       <meta charset="utf-8">
       <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico"> -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <meta name="theme-color" content="#000000">
       <link rel="apple-touch-icon" href="./images/logo129.png">
       <link rel="icon" href="./images/logo129.png" type="image/x-icon">
       <title>Академия Light</title>
+      <link rel="preload" href="./images/100-90-8.png" as="image">
+      <link rel="preload" href="./images/firstImagePeople.png" as="image">
       <link rel="stylesheet" href="./css/index.css">
+
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" ></script>
   </head>
   <body class="page">
-      <!-- <div class="scrollbar">
-        <div class="overflow"></div>
-      </div> -->
     @@include('blocks/Header.html')
     <main class="main">
       @@include('blocks/Academy.html')
@@ -21,7 +24,6 @@
       @@include('blocks/Advantages.html')
       @@include('blocks/Coaching.html')
       @@include('blocks/Founders.html')
-      @@include('blocks/Teachers.html')
       @@include('blocks/Format.html')
       @@include('blocks/Services.html')
       @@include('blocks/Coach.html')
@@ -31,8 +33,7 @@
       @@include('blocks/Window.html')
     </main>
     @@include('blocks/Footer.html')
-
-    <script src="./js/index.bundle.js"></script>
+    <script src="./js/index.bundle.js" ></script>
   </body>
 </html>
 
