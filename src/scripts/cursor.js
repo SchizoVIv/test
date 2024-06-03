@@ -3,21 +3,22 @@ const cursor = document.querySelector('.cursor');
 const cursor2 = document.querySelector('.cursor2');
 const page = document.querySelector('.page');
 
-function cursorChange() {
-  if(screenWidth < 993) {
+// function cursorChange() {
+  if(screenWidth > 992) {
     // document.documentElement.style.cursor = page.style.cursor = 'none';
-    if(!cursor.classList.contains('visually-hidden')) {
-      cursor.classList.add('visually-hidden')
-    }
-    if(!cursor2.classList.contains('visually-hidden')) {
-      cursor2.classList.add('visually-hidden')
-    }
+    // if(!cursor.classList.contains('visually-hidden')) {
+    //   cursor.classList.add('visually-hidden')
+    // }
+    // if(!cursor2.classList.contains('visually-hidden')) {
+    //   cursor2.classList.add('visually-hidden')
+    // }
 
-    document.removeEventListener('mousemove', (e) => {
-      cursor.style.cssText = cursor2.style.cssText = 'left: ' + e.clientX + 'px; top:' + e.clientY + 'px;'
-    })
+    // document.removeEventListener('mousemove', (e) => {
+    //   cursor.style.cssText = cursor2.style.cssText = 'left: ' + e.clientX + 'px; top:' + e.clientY + 'px;'
+    // })
 
-  } else {
+  // } else
+  //  {
     // document.documentElement.style.cursor = page.style.cursor = 'none';
     if(cursor.classList.contains('visually-hidden')) {
       cursor.classList.remove('visually-hidden')
@@ -29,11 +30,11 @@ function cursorChange() {
       cursor.style.cssText = cursor2.style.cssText = 'left: ' + e.clientX + 'px; top:' + e.clientY + 'px;'
       })
   }
-}
+// }
 
-cursorChange()
+// cursorChange()
 
-window.addEventListener("resize", cursorChange);
+// window.addEventListener("resize", cursorChange);
 
 
 // document.removeEventListener('mousemove', (e) => {
