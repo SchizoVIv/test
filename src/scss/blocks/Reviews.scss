@@ -103,6 +103,10 @@
   border-radius: 50%;
 }
 
+.reviews__box-text {
+  align-self: flex-start;
+}
+
 .reviews__box-text:nth-child(3) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
