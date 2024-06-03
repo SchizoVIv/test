@@ -131,11 +131,11 @@ ol {
   }
 }
 
-// @media (min-width: 993px) {
-//   html, .page, a, button {
-//     cursor: none;
-//   }
-// }
+@media (min-width: 993px) {
+  html, .page, a, button {
+    cursor: none;
+  }
+}
 
 ::-webkit-scrollbar {
   width: 12px;
